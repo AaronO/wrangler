@@ -177,9 +177,9 @@ fn validate_project(project: &Project, release: bool) -> Result<(), failure::Err
         {
             missing_fields.push("zone_id")
         };
-        if project.route.as_ref().unwrap_or(&"".to_string()).is_empty() {
-            missing_fields.push("route")
-        };
+        // if project.route.as_ref().unwrap_or(&"".to_string()).is_empty() {
+        //     missing_fields.push("route")
+        // };
         //zoned deploy destination
         "a route"
     } else {
